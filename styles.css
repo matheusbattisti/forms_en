@@ -1,0 +1,167 @@
+body {
+  font-family: Helvetica;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+h1,
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 40px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto; /* Centers the form horizontally */
+  margin-bottom: 40px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="date"],
+input[type="time"],
+input[type="color"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="color"] {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+}
+
+input[type="password"] {
+  letter-spacing: 0.1em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+p {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+label[for^="male"],
+label[for^="female"],
+label[for^="other"],
+label[for^="music"],
+label[for^="sports"],
+label[for^="travel"] {
+  font-weight: normal;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+select {
+  height: 40px;
+}
+
+input[type="number"] {
+  max-width: 150px;
+}
+
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="color"] {
+  max-width: 200px;
+}
+
+input[type="file"] {
+  padding: 5px 0;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+legend {
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.submit-buttons {
+  margin-top: 20px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  color: white;
+  padding: 12px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+}
+
+button[type="reset"] {
+  background-color: #f44336;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 10px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  button[type="submit"],
+  button[type="reset"] {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .submit-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Complete HTML Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Complete HTML Form</h1>
+
+    <form action="/submit" method="post" enctype="multipart/form-data">
+      <!-- 2. Basic Structure of a Form -->
+      <!-- The form starts here with action and method -->
+
+      <!-- 3. Text Input Fields -->
+      <!-- Text, password, and email fields with labels -->
+      <h2>Personal Information</h2>
+
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+        maxlength="50"
+      />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@domain.com"
+        required
+      />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <!-- 4. Text Areas -->
+      <!-- Using the textarea tag -->
+      <label for="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        cols="30"
+        placeholder="Write your message here"
+      ></textarea>
+
+      <!-- 5. Radio Buttons and Checkboxes -->
+      <!-- Radio buttons and checkboxes -->
+      <h2>Preferences</h2>
+
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="Other" />
+      <label for="other">Other</label>
+
+      <p>Interests:</p>
+      <input type="checkbox" id="music" name="interests" value="Music" />
+      <label for="music">Music</label>
+
+      <input type="checkbox" id="sports" name="interests" value="Sports" />
+      <label for="sports">Sports</label>
+
+      <input type="checkbox" id="travel" name="interests" value="Travel" />
+      <label for="travel">Travel</label>
+
+      <!-- 6. Select Lists -->
+      <!-- Using select and option tags -->
+      <label for="city">City:</label>
+      <select id="city" name="city">
+        <option value="">Select your city</option>
+        <option value="São Paulo">São Paulo</option>
+        <option value="Rio de Janeiro">Rio de Janeiro</option>
+        <option value="Belo Horizonte">Belo Horizonte</option>
+        <option value="Curitiba">Curitiba</option>
+      </select>
+
+      <!-- 8. Validation and Accessibility Attributes -->
+      <!-- Fields with additional validation -->
+      <h2>Additional Information</h2>
+
+      <label for="age">Age (between 18 and 99):</label>
+      <input type="number" id="age" name="age" min="18" max="99" required />
+
+      <label for="phone">Phone:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
+        placeholder="Format: 11-91234-5678"
+        title="Expected format: 11-91234-5678"
+      />
+
+      <label for="website">Website:</label>
+      <input
+        type="url"
+        id="website"
+        name="website"
+        placeholder="https://www.yourwebsite.com"
+      />
+
+      <!-- 9. New Input Types in HTML5 -->
+      <!-- Date, time, number, and color fields -->
+      <label for="birth_date">Date of Birth:</label>
+      <input type="date" id="birth_date" name="birth_date" />
+
+      <label for="contact_time">Preferred Contact Time:</label>
+      <input type="time" id="contact_time" name="contact_time" />
+
+      <label for="quantity">Desired Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="10" />
+
+      <label for="favorite_color">Favorite Color:</label>
+      <input type="color" id="favorite_color" name="favorite_color" />
+
+      <!-- 10. File Upload -->
+      <!-- File upload fields -->
+      <h2>File Upload</h2>
+
+      <label for="file">Attach File (PDF or DOCX):</label>
+      <input type="file" id="file" name="file" accept=".pdf, .docx" />
+
+      <label for="photos">Upload Your Photos:</label>
+      <input type="file" id="photos" name="photos" accept="image/*" multiple />
+
+      <!-- 7. Submit and Reset Buttons -->
+      <!-- Submit and reset buttons -->
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
